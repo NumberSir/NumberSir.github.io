@@ -20,7 +20,7 @@
   
   
     <script>
-        var themeModelId = '3';
+        var themeModelId = '0';
         if (themeModelId) {
             localStorage.setItem('modelId', themeModelId);
         }
@@ -422,14 +422,14 @@
         <!-- 内容区域 -->
         <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
 <div class="bg-light-floor-archive" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
-<div class="archive-header" style="background-image:url('https://pic1.zhimg.com/80/v2-1414b3a4b205e19060db18a20d08723a_1440w.jpg?source=1940ef5c')">
+<div class="archive-header" style="background-image:url('/medias/archive/img.png')">
   <div class="archive-header-title">
-    archive
+    归档文章
   </div>
   <div class="archive-header-desc">
   
       <span class="title">
-      愿你如风，被人温柔以待
+      妙笔生花
       </span>
   
   </div>
@@ -441,12 +441,12 @@
       <source style="width: 100%;height: 100vh;" src="/">
   </video>
   <div class="video-header-title">
-    archive
+    归档文章
   </div>
   <div class="video-header-desc">
   
           <span class="title">
-          愿你如风，被人温柔以待
+          妙笔生花
           </span>
       
   </div>
@@ -611,12 +611,16 @@
 <style>
 .aplayer .aplayer-lrc p {
   
+  display: none;
+  
   font-size: 12px;
   font-weight: 700;
   line-height: 16px !important;
 }
 
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
   
   font-size: 15px;
   color: #42b983;
@@ -639,12 +643,12 @@
   type="playlist"
   id="873657148"
   fixed='true'
-  autoplay='false'
+  autoplay='true'
   theme='#42b983'
   loop='all'
   order='random'
   preload='auto'
-  volume='0.7'
+  volume='0.3'
   list-folded='true'
 >
 </meting-js>
